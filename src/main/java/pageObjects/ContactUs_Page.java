@@ -63,7 +63,7 @@ public class ContactUs_Page extends BasePage {
 	public ContactUs_Page confirmContactUsFormSubmissionWasSuccessfull() throws IOException {
 		WebElement thanksContactUsPage = getDriver().findElement(By.xpath("//*[@id=\"contact_reply\"]/h1"));
 		WaitUntilWebElementIsVisible(thanksContactUsPage);
-		assertEquals("thank you for your message!", thanksContactUsPage.getText().toLowerCase());
+		assertEquals("thank you for your message!33", thanksContactUsPage.getText().toLowerCase());
 		return new ContactUs_Page();
 		
 	}
